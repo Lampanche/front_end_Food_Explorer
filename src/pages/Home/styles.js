@@ -1,0 +1,10 @@
+import styled from "styled-components"
+
+import { breakpoints } from "../../styles/breakpoints"
+
+export const Container = styled.div`
+
+  width: 100%;
+  height: 100vh;
+
+`
