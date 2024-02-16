@@ -56,44 +56,6 @@ export const Container = styled.div`
 
       }
 
-      .wrappedInput
-      {
-
-        display: flex;
-        align-items: center;
-        gap: 1.4rem;
-
-        justify-content: ${({ isadmin }) => isadmin ? `center` : ` `}; 
-
-        width: ${({ isadmin }) => isadmin ? `58.1rem` : `40.9rem`};
-
-        border-radius: 0.5rem;
-
-        background-color: ${({ theme }) => theme.COLORS.DARK_900};
-
-          img
-          {
-            width: 2.4rem;
-            height: 2.4rem;
-            margin-left: 1.35rem;
-          }
-
-          input
-          {
-            width: ${({ isadmin }) => isadmin ? `` : `100%`}; 
-            background: none;
-            border: none;
-            color:${({ theme }) => theme.COLORS.LIGHT_100};
-          }
-
-          input::placeholder
-          {
-            color:${({ theme }) => theme.COLORS.LIGHT_500};
-            font-family: 'Roboto', sem serifa;
-          }
-
-      }
-
       .wrappedBtnAndLink
       {
 

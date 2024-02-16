@@ -72,12 +72,7 @@ export const Container = styled.div`
         height: 2rem;
       }
 
-  } 
-
-
-  
-
- 
+  }  
 
 `
 

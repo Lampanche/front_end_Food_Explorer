@@ -1,17 +1,17 @@
-import { Container } from "./styles.js"
-import logo from "../../../assets/polygon1.png"
-import iconshopping from "../../../assets/iconShopping.png"
-import iconSignOut from "../../../assets/SignOut.png"
-import iconSearch from "../../../assets/search.png"
+import { Container } from "./styles.js";
+import logo from "../../../assets/polygon1.png";
+import iconshopping from "../../../assets/iconShopping.png";
+import iconSignOut from "../../../assets/SignOut.png";
+
+import { SearchInput } from "../../common/SearchInput";
+
 
 export function Header_desktop({ isadmin })
 { 
 
-  console.log(isadmin)
-
   return(
 
-    <Container isadmin = {isadmin}>
+    <Container>
       
       <div>
 
@@ -33,13 +33,7 @@ export function Header_desktop({ isadmin })
 
         </a>
 
-        <div className="wrappedInput">
-
-          <img src={iconSearch} alt="icone de uma lupa para a barra de pesquisa" />
-
-          <input type="text" placeholder="Busque por pratos ou ingredientes" />
-
-        </div>
+        <SearchInput isAdmin={ isadmin }/>
 
         {isadmin ? 
         
