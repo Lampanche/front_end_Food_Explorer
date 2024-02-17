@@ -104,20 +104,78 @@ export const Container = styled.div`
         font-weight: 400;
       }    
 
-      @media ${breakpoints.headerAdminBtn}
+      @media ${breakpoints.headerBtn}
       {
         .btnAdmin
         {
           padding: 0.4rem 1.5rem;
         }
+
+        .wrappedBtnAndLink
+        {
+            .btnUser
+            {
+
+              padding: 0.8rem 1.8rem;
+
+
+              img
+              {
+                height: 1.8rem;
+                width: 2rem;
+              }
+
+              span
+              {
+                font-size: 1rem;
+
+                > span
+                {
+                  font-size: 1rem;
+                }
+
+              }
+
+            }
+        }
+
       }
 
-      @media ${breakpoints.headerAdminBtnReset} 
+      @media ${breakpoints.headerBtnReset} 
       {
         .btnAdmin
         {
           padding: 1.2rem 3.2rem;
-        }  
+        }
+
+        .wrappedBtnAndLink
+        {
+            .btnUser
+            {
+
+              padding: 1.6rem 3.2rem;
+
+
+              img
+              {
+                height: 2.2rem;
+                width: 2.7rem;
+              }
+
+              span
+              {
+                font-size: 1.4rem;
+
+                > span
+                {
+                  font-size: 1.4rem;
+                }
+
+              }
+
+            }
+        }
+        
       }
 
     }

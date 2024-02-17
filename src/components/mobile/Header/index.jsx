@@ -3,7 +3,7 @@ import logo from "../../../assets/polygon1.png"
 import iconshopping from "../../../assets/iconShopping.png"
 import iconMenu from "../../../assets/Menu.png"
 
-export function Header_mobile({ title, isAdmin })
+export function Header_mobile({ title, isadmin })
 {
   return(
 
@@ -25,7 +25,7 @@ export function Header_mobile({ title, isAdmin })
 
             <span> food explorer </span>
 
-            <span>{isAdmin ? "admin" : ""}</span>
+            <span>{isadmin ? "admin" : ""}</span>
 
           </div>
 

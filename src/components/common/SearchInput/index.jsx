@@ -5,8 +5,6 @@ import iconSearch from "../../../assets/search.png";
 export function SearchInput({ isAdmin })
 {
 
-  console.log(isAdmin)
-
   if(isAdmin)
   {
 
@@ -30,8 +28,6 @@ export function SearchInput({ isAdmin })
 
   if(!isAdmin)
   {
-
-    console.log("if", isAdmin)
 
     return(
   
