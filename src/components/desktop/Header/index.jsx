@@ -6,7 +6,7 @@ import iconSignOut from "../../../assets/SignOut.png";
 import { SearchInput } from "../../common/SearchInput";
 
 
-export function Header_desktop({ isadmin })
+export function HeaderDesktop({ isadmin })
 { 
 
   return(

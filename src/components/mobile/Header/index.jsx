@@ -3,7 +3,7 @@ import logo from "../../../assets/polygon1.png"
 import iconshopping from "../../../assets/iconShopping.png"
 import iconMenu from "../../../assets/Menu.png"
 
-export function Header_mobile({ title, isadmin })
+export function HeaderMobile({ title, isadmin })
 {
   return(
 
@@ -31,13 +31,22 @@ export function Header_mobile({ title, isadmin })
 
         </a>
 
-        <div>
+        {
+          isadmin ?
 
-          <img className="iconShopping" src={iconshopping} alt="Imagem do icone de itens escolhidos" />
-          
-          <button>{title}0</button>
+          ""
 
-        </div>
+          :
+
+          <div>
+
+            <img className="iconShopping" src={iconshopping} alt="Imagem do icone de itens escolhidos" />
+            
+            <button>{title}0</button>
+
+          </div>
+
+        }
 
       </div>
 

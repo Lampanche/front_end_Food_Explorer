@@ -8,11 +8,7 @@ export const Container = styled.div`
 
   > div
   {
-    width: 90%;
-
-    margin: 0 auto;
-    padding: 5.4rem 0 0;
-
+    padding: 5.6rem 0 0;
     display: flex;
     gap:1.6rem;
     align-items: center;
@@ -20,9 +16,7 @@ export const Container = styled.div`
     
       a
       {
-
-        width: 27.846rem;
-
+        max-width: 27.874rem;
         div
         {
           display: flex;

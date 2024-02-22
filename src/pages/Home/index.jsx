@@ -1,8 +1,12 @@
 import { Container } from "./styles.js";
 
-import { Header_mobile } from "../../components/mobile/Header/index.jsx";
+import { HeaderMobile } from "../../components/mobile/Header/index.jsx";
 
-import { Header_desktop } from "../../components/desktop/Header/index.jsx";
+import { HeaderDesktop } from "../../components/desktop/Header/index.jsx";
+
+import { SectionFoods } from "../../components/mobile/SectionFoods";
+
+import { Footer } from "../../components/common/Footer/index.jsx";
 
 import { toogleComponents } from "../../utils/toogleComponents.js";
 
@@ -18,7 +22,7 @@ export function Home()
 
   resize(setVwStart)
 
-  const Header = toogleComponents(vwStart, Header_mobile, Header_desktop)
+  const Header = toogleComponents(vwStart, HeaderMobile, HeaderDesktop)
   
   return( 
 
@@ -26,18 +30,33 @@ export function Home()
 
       <Header isadmin = {false}/>
 
-      <div className="wrappedMainText">
+        
+      <main>
 
-        <img src={mainImgHome} alt="Imagem de alimentos."></img>
+        <div className="wrappedMainText">
 
-        <div className="wrappedText">
+          <img src={mainImgHome} alt="Imagem de alimentos."></img>
 
-          <h1>Sabores inigualáveis</h1>
-          <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+          <div className="wrappedText">
+
+            <h1>Sabores inigualáveis</h1>
+            <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+
+          </div>
 
         </div>
 
-      </div>
+        <div className="wrappedSections">
+
+          <SectionFoods title={"Refeições"} isadmin={false}/>
+          <SectionFoods title={"Pratos principais"} isadmin={false}/>
+          <SectionFoods title={"Refeições"} isadmin={false}/>
+
+        </div>
+
+      </main>
+
+      <Footer/>
 
     </Container>
 
