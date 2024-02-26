@@ -12,6 +12,71 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5rem;
+
+  }
+
+  .wrappedContentHamMenu
+  {
+    margin-top: 3.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.6rem;
+    width: 37.2rem;
+  }
+
+  .wrappedInput
+  {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    background-color: ${( { theme } ) => theme.COLORS.DARK_900};
+    width: 37.2rem;
+    height: 4.8rem;
+    border-radius: 0.5rem;
+
+    img
+    {
+      margin-left: 1.4rem;
+    }
+
+    input
+    {
+      background: none;
+      padding: 1.2rem 1.4rem;
+      border: none;
+      width: 100%;
+      color:${({ theme }) => theme.COLORS.LIGHT_100};
+
+      ::placeholder
+      {
+        color: ${({ theme }) => theme.COLORS.LIGHT_500};
+        font-family: "Roboto", sem serifa;
+      }
+
+    }
+
+  }
+
+  .wrappedHamMenuOptions
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrappedBtnOptions
+  {
+    padding: 1rem 1rem;
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+
+    span
+    {
+      font-family: "Poppins", sem serifa;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
+    }
+
   }
 
   .wrappedSections
@@ -61,10 +126,60 @@ export const Container = styled.div`
         font-weight: 400;
         color: ${( { theme } ) => theme.COLORS.LIGHT_300};
       }
+
+      @media ${breakpoints.homeMobileHeader}
+      {
+        h1
+        {
+          font-size: 1.4rem;
+        }
+      }
+
     }
 
   }
 
+  @media ${breakpoints.homeMobileTransicaoTablet}
+    {
+      main
+      {
+        align-items: center;
+      }
+    }
+
+  @media ${breakpoints.homeMobileTransicaoTabletElements}
+  {
+    .wrappedMainText
+    {
+      max-width: 45rem;
+      height: 14rem;
+
+      img
+      {
+        width: 22rem;
+        height: 16rem;
+        top: -2rem;
+      }
+
+      .wrappedText
+      {
+
+        margin-left: 18rem;
+
+        h1
+        {
+          font-size: 2.2rem;
+        }
+
+        p
+        {
+          font-size: 1.6rem;
+        }
+
+      }
+
+    }      
+  }
 
 
 `

@@ -1,14 +1,16 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
+
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.div`
 
   width: 100%;
   height: 11.4rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
+  padding: 5.6rem 0 0;
 
-  > div
+  > .wrappedHeader
   {
-    padding: 5.6rem 0 0;
     display: flex;
     gap:1.6rem;
     align-items: center;
@@ -16,7 +18,7 @@ export const Container = styled.div`
     
       a
       {
-        max-width: 27.874rem;
+        width: 27.874rem;
         div
         {
           display: flex;
@@ -44,9 +46,22 @@ export const Container = styled.div`
 
       }
 
+      @media ${breakpoints.homeMobileHeader}
+      {
+    
+        a
+        {
+          width: 22rem;
+        }
+
+
+      }
+
       > div:nth-child(odd)
       {
         position: relative;
+        width: 2.7rem;
+        height: 2.2rem;
       }
 
       > div button:nth-child(even)
@@ -66,7 +81,29 @@ export const Container = styled.div`
         height: 2rem;
       }
 
-  }  
+  }
+
+  .wrappedHamMenuActive
+  {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    button
+    {
+      margin-left: 2.8rem;
+    }
+
+    span
+    {
+      font-family: "Roboto", sem serifa;
+      font-size: 2.16rem;
+      color: ${ ( { theme } ) => theme.COLORS.LIGHT_100 };
+    }
+
+  }
+  
+ 
 
 `
 

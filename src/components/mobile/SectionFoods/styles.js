@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.section`
 
@@ -20,6 +21,12 @@ export const Container = styled.section`
     gap: 1.6rem;
     overflow-x: auto;
     max-width: 43.6rem;
+
+    @media ${breakpoints.homeMobileTransicaoTabletElements}
+    {
+      max-width: 60rem;
+    }
+
 
   }
 

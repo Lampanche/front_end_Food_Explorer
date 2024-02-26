@@ -3,7 +3,7 @@ import logo from "../../../assets/polygon1.png";
 import iconshopping from "../../../assets/iconShopping.png";
 import iconSignOut from "../../../assets/SignOut.png";
 
-import { SearchInput } from "../../common/SearchInput";
+import { SearchInput } from "../SearchInput/index.jsx";
 
 
 export function HeaderDesktop({ isadmin })
