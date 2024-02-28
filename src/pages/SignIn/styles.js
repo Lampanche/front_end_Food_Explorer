@@ -15,13 +15,5 @@ export const Container = styled.div`
     gap: 7.3rem;
   }
 
-  form
-  {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    width: 31.6rem;
-
-  }
 
 `

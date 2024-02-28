@@ -1,8 +1,10 @@
 import { Container } from "./styles.js";
 
-import { HeaderMobile } from "../../components/mobile/Header/index.jsx";
+import { HeaderMobile } from "../../components/mobile/HeaderMobile/index.jsx";
 
-import { HeaderDesktop } from "../../components/desktop/Header/index.jsx";
+import { HamMenu } from "../../components/mobile/HamMenu/index.jsx";
+
+import { HeaderDesktop } from "../../components/desktop/HeaderDesktop/index.jsx";
 
 import { SectionFoods } from "../../components/mobile/SectionFoods";
 
@@ -16,12 +18,9 @@ import { useState, useEffect } from "react";
 
 import mainImgHome from "../../assets/pngegg 2.png";
 
-import iconSearch from "../../assets/search.png";
 
 export function Home()
 { 
-
-  const [ isAdmin, setIsAdmin ] = useState(true);
 
   const [ activeHamMenu, setActiveHamMenu ] = useState(false);
 
@@ -42,59 +41,9 @@ export function Home()
       {
         activeHamMenu ?
 
-        <main style=
-        {
-          { alignItems:"center",
-            minHeight: "67.7rem"
-          }
-        }>
+        <main style={{ alignItems:"center", minHeight: "67.7rem"}}>
 
-          <div className="wrappedContentHamMenu">
-
-            <div className="wrappedInput">
-
-              <img src={iconSearch} alt="Icone do input de pesquisa."/>
-
-              <input placeholder="Busque por pratos ou ingredientes"></input>
-
-            </div>
-
-            {
-              isAdmin ?
-
-              <div className="wrappedHamMenuOptions">
-
-                <div className="wrappedBtnOptions">
-
-                  <button>
-                    <span>Novo prato</span>
-                  </button>
-
-                </div>
-
-                <div className="wrappedBtnOptions">
-
-                  <button>
-                    <span>Sair</span>
-                  </button>
-
-                </div>
-
-              </div>
-
-              :
-
-              <div className="wrappedHamMenuOptions">
-
-                <button>
-                  <span>Sair</span>
-                </button>
-
-              </div>
-
-            }
-
-          </div>
+          <HamMenu isadmin={true}/>
 
         </main>
 

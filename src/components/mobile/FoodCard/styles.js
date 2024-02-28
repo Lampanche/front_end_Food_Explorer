@@ -44,16 +44,6 @@ justify-content: center;
   
 }
 
-  .wrappedImgFood
-  {
-    img
-    {
-      width: 8.8rem;
-      height: 8.8rem;
-      border-radius: 99%;
-    }
-  }
-
   .btnDetailsFood
   {
     font-family: 'Poppins', sem serifa;

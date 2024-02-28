@@ -1,5 +1,7 @@
 import { Container } from "./styles.js";
 
+import { ImgFood } from "../../common/ImgFood/index.jsx";
+
 import favoriteBtn from "../../../assets/favorite.png";
 import imgFood from "../../../assets/Dish.png";
 import imgBtnEditAdmin from "../../../assets/Pencil.png";
@@ -34,12 +36,7 @@ export function FoodCard({ isadmin })
 
       <div className="wrappedMainContent">
         
-
-        <div className="wrappedImgFood">
-
-          <img src={imgFood} alt="Imagem da refeição."></img>
-
-        </div>
+        <ImgFood widthContainer={"8.8rem"} heightContainer={"8.8rem"}/>
 
         <button className="btnDetailsFood">
 
