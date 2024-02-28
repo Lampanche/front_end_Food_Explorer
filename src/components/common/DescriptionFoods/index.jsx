@@ -1,11 +1,11 @@
 import { Container } from "./styles.js";
 
 
-export function DescriptionFoods({title, size, weight})
+export function DescriptionFoods({title, size, weight, align})
 {
   return(
 
-    <Container size = {size} weight = {weight}>
+    <Container size = {size} weight = {weight} align={align}>
 
       {title}
 
