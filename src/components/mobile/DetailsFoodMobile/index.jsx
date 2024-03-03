@@ -10,6 +10,9 @@ import minus from "../../../assets/Minus.png";
 
 import plus from "../../../assets/Plus.png";
 
+
+import { BtnBack } from "../../common/BtnBack/index.jsx";
+
 import { Button } from "../../common/Button";
 
 import { ImgFood } from "../../common/ImgFood";
@@ -27,14 +30,18 @@ export function DetailsFoodMobile({isadmin})
 
     <Container>
 
-      <button className="wrappedBtnBack">
+      <BtnBack 
+        imgBtnBack={iconBack} 
+        fontSize={"2.4rem"} 
+        weight={"400"}
+        alignSelf={"flex-start"}
+      />
 
-        <img src={iconBack} alt="Seta para a esquerda do botão de voltar"></img>
-        <span>voltar</span>
-
-      </button>
-
-      <ImgFood widthContainer={"26.4rem"} heightContainer={"26.4rem"} img={imgFood}/>
+      <ImgFood 
+        widthContainer={"26.4rem"} 
+        heightContainer={"26.4rem"} 
+        img={imgFood}
+      />
 
       <div className="wrappedInfosAndBtns">
 

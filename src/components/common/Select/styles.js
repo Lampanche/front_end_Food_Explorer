@@ -20,8 +20,8 @@ export const Container = styled.div`
     color: ${( { theme } ) => theme.COLORS.LIGHT_400};
     font-size: 1.4rem;
     border-radius: 0.8rem;
-    background-color: ${( { theme } ) => theme.COLORS.DARK_800};
-    padding: 1.2rem 3.2rem;
+    background-color: ${( { theme } ) => theme.COLORS.DARK_900};
+    padding: 1.2rem 1.6rem;
     border: none;
     appearance: none;
   }

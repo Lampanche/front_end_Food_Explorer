@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
 
   width: 11.6rem;
-  padding: 0.5rem 1.6rem;
+  padding: 1rem 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,6 +21,7 @@ export const Container = styled.div`
     color: ${( { theme } ) => theme.COLORS.LIGHT_500};
     width: 6.8rem;
     height: 1.6rem;
+    text-align: center;
 
 
     ::placeholder

@@ -17,41 +17,42 @@ export function HamMenu({ isadmin })
       </div>
 
       {
+
       isadmin ?
 
-      <div className="wrappedHamMenuOptions">
+        <div className="wrappedHamMenuOptions">
 
-        <div className="wrappedBtnOptions">
+          <div className="wrappedBtnOptions">
 
-          <button>
-            <span>Novo prato</span>
-          </button>
+            <button>
+              <span>Novo prato</span>
+            </button>
 
-        </div>
+          </div>
 
-        <div className="wrappedBtnOptions">
+          <div className="wrappedBtnOptions">
 
-          <button>
-            <span>Sair</span>
-          </button>
+            <button>
+              <span>Sair</span>
+            </button>
 
-        </div>
-
-      </div>
-
-      :
-
-      <div className="wrappedHamMenuOptions">
-
-        <div className="wrappedBtnOptionsUser">
-
-          <button>
-            <span>Sair</span>
-          </button>
+          </div>
 
         </div>
 
-      </div>
+        :
+
+        <div className="wrappedHamMenuOptions">
+
+          <div className="wrappedBtnOptionsUser">
+
+            <button>
+              <span>Sair</span>
+            </button>
+
+          </div>
+
+        </div>
 
       }
 

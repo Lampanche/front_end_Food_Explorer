@@ -15,7 +15,7 @@ export function AddIngredient({ setIngredient})
 
       <input type="text" placeholder="Adicionar" name="ingredientes" id="ingredientes" onChange={(e) => setValueInput(e.currentTarget.value)}></input>
 
-      <button onClick={() =>  setIngredient(prevstate => [...prevstate, valueInput]) }>
+      <button type="button" onClick={(e) => setIngredient(prevstate => [...prevstate, valueInput])}>
 
         <img src={plusAddIngredient} alt="Icone de adicionar um ingrediente"></img>
 

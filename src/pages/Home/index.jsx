@@ -36,12 +36,12 @@ export function Home()
 
     <Container>
 
-      <Header isadmin = {false} setHamMenuActiveHome = {setActiveHamMenu}/>
+      <Header isadmin = {false} setHamMenuActivePage = {setActiveHamMenu}/>
         
       {
         activeHamMenu ?
 
-        <main style={{ alignItems:"center", minHeight: "67.7rem"}}>
+        <main>
 
           <HamMenu isadmin={true}/>
 

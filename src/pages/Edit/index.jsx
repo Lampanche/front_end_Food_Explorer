@@ -1,16 +1,16 @@
 import { Container } from "./styles.js";
 
-import { FormNewFoodMobile } from "../../components/mobile/FormNewFoodMobile";
-
 import { HeaderMobile } from "../../components/mobile/HeaderMobile";
-
-import { Footer } from "../../components/mobile/Footer";
 
 import { HamMenu } from "../../components/mobile/HamMenu/index.jsx";
 
+import { FormEditFoodMobile } from "../../components/mobile/FormEditFoodMobile/index.jsx";
+
+import { Footer } from "../../components/mobile/Footer";
+
 import { useState } from "react";
 
-export function New()
+export function Edit()
 {
 
   const [ activeHamMenu, setActiveHamMenu ] = useState(false);
@@ -21,21 +21,25 @@ export function New()
 
       <HeaderMobile isadmin={true} setHamMenuActivePage={setActiveHamMenu}/>
 
-      <main>
+      {
+        activeHamMenu ?
 
-        {
-          activeHamMenu ?
-            
-          <HamMenu />
+        <main>
 
-          :
+          <HamMenu isadmin={true}/>
 
-          <FormNewFoodMobile />
+        </main>
 
-        }
+        :
 
+        <main>
 
-      </main>
+          <FormEditFoodMobile />
+
+        </main>
+
+      }
+
 
       <Footer/>
 

@@ -22,7 +22,10 @@ export function InputIngredient({ width })
 
         { 
           
-          listValueIngredientAdded.map((el, index) => ( <TagIngredientAdded title={el} key={index} indexEl={index} setIngredient = {setListValueIngredientAdded}/> ))
+          listValueIngredientAdded.map((el, index) => {
+            if (el) return ( <TagIngredientAdded title={el} key={index} indexEl={index} setIngredient = {setListValueIngredientAdded}/> )
+            else return ("")
+          })
 
         }
 

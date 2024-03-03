@@ -5,7 +5,7 @@ import iconMenu from "../../../assets/Menu.png";
 import iconClose from "../../../assets/Close.png";
 import { useState } from "react";
 
-export function HeaderMobile({ title, isadmin, setHamMenuActiveHome })
+export function HeaderMobile({ title, isadmin, setHamMenuActivePage })
 {
 
   const [ hamMenuActive, setHamMenuActive ] = useState(false);
@@ -22,7 +22,7 @@ export function HeaderMobile({ title, isadmin, setHamMenuActiveHome })
 
           <button onClick={ () => {
             setHamMenuActive(false)
-            setHamMenuActiveHome(false)
+            setHamMenuActivePage(false)
             }
             }>
 
@@ -41,7 +41,7 @@ export function HeaderMobile({ title, isadmin, setHamMenuActiveHome })
             <button onClick={ () => {
               
               setHamMenuActive(true)
-              setHamMenuActiveHome(true)
+              setHamMenuActivePage(true)
               }
               }>
 

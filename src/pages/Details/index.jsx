@@ -19,7 +19,7 @@ export function Details()
 
     <Container>
 
-      <HeaderMobile isadmin={false} setHamMenuActiveHome={setActiveHamMenu}/>
+      <HeaderMobile isadmin={false} setHamMenuActivePage={setActiveHamMenu}/>
 
       <main>
 
