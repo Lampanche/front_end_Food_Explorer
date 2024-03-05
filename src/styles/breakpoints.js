@@ -4,5 +4,7 @@ export const breakpoints = {
   homeMobileHeader: `(max-width:410px)`,
   homeMobileTransicaoTablet: `(min-width:480px)`,
   homeMobileTransicaoTabletElements: `(min-width:900px)`,
-  contentSignInTransition: `(min-width:1024px)`
+  contentSignInTransitionDesktop: `(min-width:1024px) and (max-width:1120px)`,
+  titleAppMobile: `(max-width:1023px)`,
+  titleAppDesktopAndTransition: `(min-width:1024px)`
 }

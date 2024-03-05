@@ -22,4 +22,12 @@ export const Container = styled.div`
     margin-top: -2.276rem;
   }
 
+  @media ${breakpoints.contentSignInTransitionDesktop}
+  {
+    form
+    {
+      min-width: 25rem;
+    }
+  }
+
 `

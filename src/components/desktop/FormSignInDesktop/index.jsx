@@ -16,7 +16,7 @@ export function FormSignInDesktop()
 
       <form>
 
-        <FormTitle title={"Crie sua conta"}/>
+        <FormTitle title={"Faça login"}/>
 
         <InputText
           title={"Email"}

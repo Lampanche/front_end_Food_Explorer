@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 1.074rem;
+  margin-top: -9.256rem;
 
   h1
   {
@@ -14,15 +15,25 @@ export const Container = styled.div`
     padding: 0;
 
     font-family: "Roboto", sem serifa;
-    font-size: 3.724rem;
+    font-size: 4.2rem;
     font-weight: 700;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-
   }
-
-  @media ${breakpoints.contentSignInTransition}
+  
+  @media ${breakpoints.contentSignInTransitionDesktop} 
   {
-    margin-top: -9.256rem;
+    h1
+    {
+      font-size: 3rem;
+    }
+  
+    img
+    {
+      width: 3.5rem;
+      height: 4rem;
+    }
   }
+
+  
 
 `

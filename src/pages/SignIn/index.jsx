@@ -1,6 +1,8 @@
 import { Container } from "./styles.js";
 
-import { TitleApp } from "../../components/mobile/TitleApp";
+import { TitleAppDesktop } from "../../components/desktop/TitleAppDesktop/index.jsx";
+
+import { TitleAppMobile } from "../../components/mobile/TitleAppMobile/index.jsx";
 
 import { FormSignInMobile } from "../../components/mobile/FormSignInMobile";
 
@@ -21,15 +23,25 @@ export function SignIn()
 
   const FormSignIn = toogleComponents(vwStart, FormSignInMobile, FormSignInDesktop);
 
+  const TitleApp = toogleComponents(vwStart, TitleAppMobile, TitleAppDesktop);
+
   return(
 
     <Container>
 
       <main>
 
-        <TitleApp />
+        <div className="wrappedTitleAndForm">
 
-        <FormSignIn />   
+          <TitleApp />
+
+          <div>
+            
+            <FormSignIn />
+
+          </div>   
+
+        </div>
 
       </main>
 
