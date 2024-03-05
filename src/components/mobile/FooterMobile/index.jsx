@@ -1,7 +1,7 @@
 import { Container } from "./styles.js";
-import logoRestaurante2 from "../../../assets/Polygon 2.png";
+import iconAppFooterMobile from "../../../assets/iconAppFooterMobile.png";
 
-export function Footer()
+export function FooterMobile()
 {
   return(
 
@@ -10,7 +10,7 @@ export function Footer()
 
       <div>
 
-        <img src={logoRestaurante2} alt="Imagem da logo do Food Explorer"></img>
+        <img src={iconAppFooterMobile} alt="Imagem da logo do Food Explorer"></img>
         <span>food explorer</span>
 
       </div>

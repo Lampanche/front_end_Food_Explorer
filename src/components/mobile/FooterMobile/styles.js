@@ -28,7 +28,7 @@ export const Container = styled.footer`
 
   span
   {
-    font-family: 'DM Sans', sem serifa;
+    font-family: 'Roboto', sem serifa;
     font-size: 1.2rem;
     color: ${( { theme } ) => theme.COLORS.LIGHT_200};
   }
