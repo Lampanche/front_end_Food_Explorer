@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../styles/breakpoints";
 
 export const Container = styled.div`
 
@@ -13,15 +14,15 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 7.3rem;
-  }
 
-  form
-  {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
-    width: 31.6rem;
-
+    @media ${breakpoints.contentSignInTransition}
+    {
+      flex-direction: row;
+      gap: 30.614rem;
+      justify-content: center;
+        
+    }
+    
   }
 
 

@@ -36,7 +36,7 @@ export function FormEditFoodMobile()
 
       <TitleFormAddAndAttFood title={"Editar prato"}/>
 
-      <InputFile />
+      <InputFile title={"Selecione imagem para alterá-la"}/>
 
       <InputText
         title={"Nome"} 

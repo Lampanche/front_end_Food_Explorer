@@ -10,7 +10,7 @@ export function TagIngredientAdded({ title, setIngredient, indexEl })
 
       <span>{title}</span>
 
-      <button onClick={() => setIngredient(prevstate => prevstate.filter( (el, index) => index != indexEl ))}>
+      <button type="button" onClick={() => setIngredient(prevstate => prevstate.filter( (el, index) => index != indexEl ))}>
 
         <img src={iconDelete} alt="Icone de deletar a tag do ingrediente"></img>
 

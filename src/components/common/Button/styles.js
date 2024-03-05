@@ -7,6 +7,6 @@ export const Container = styled.button`
   background-color: ${( { theme } ) => theme.COLORS.TOMATO_100};
   color: ${( { theme } ) => theme.COLORS.LIGHT_100};
   font-family: "Poppins", sem serifa;
-  font-weight: 100;
+  font-weight: 500;
   border-radius: 0.5rem;
 `

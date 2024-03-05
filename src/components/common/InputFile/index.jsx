@@ -2,10 +2,10 @@ import { Container } from "./styles.js";
 
 import { useState} from "react";
 
-export function InputFile({widthContainer, alignItems})
+export function InputFile({widthContainer, alignItems, title})
 {
 
-  const [ valueInputFile, setValueInputFile ] = useState("Selecione a imagem")
+  const [ valueInputFile, setValueInputFile ] = useState(title)
 
   return(
 

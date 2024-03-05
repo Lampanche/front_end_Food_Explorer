@@ -6,7 +6,7 @@ import { Button } from "../../common/Button";
 
 import { ButtonText } from "../../common/ButtonText";
 
-export function FormSignUp()
+export function FormSignUpMobile()
 {
   return(
 

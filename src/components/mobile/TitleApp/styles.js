@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.div`
 
@@ -17,6 +18,11 @@ export const Container = styled.div`
     font-weight: 700;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
+  }
+
+  @media ${breakpoints.contentSignInTransition}
+  {
+    margin-top: -9.256rem;
   }
 
 `
