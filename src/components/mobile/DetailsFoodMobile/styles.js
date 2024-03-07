@@ -81,20 +81,5 @@ export const Container = styled.div`
 
   }
 
-  .wrappedBtnMinusAndPlus
-  {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-
-    span
-    {
-      font-family: 'Roboto', sem serifa;
-      font-size: 2.263rem;
-      font-weight: 700;
-      color: ${( { theme } ) => theme.COLORS.LIGHT_300};
-    }
-
-  }
 
 `

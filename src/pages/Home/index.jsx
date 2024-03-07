@@ -21,6 +21,9 @@ import { resizeWidth } from "../../utils/resize.js";
 import { useState, useEffect } from "react";
 
 
+import { FoodCard } from "../../components/desktop/FoodCard/index.jsx";
+
+
 export function Home()
 { 
 
@@ -55,11 +58,15 @@ export function Home()
 
           <BannerDesktop/>
 
+          
+
           <WrappedSectionsMobile isadmin={false}/>
 
         </main>
 
       }
+
+      <FoodCard/>
 
       <FooterDesktop/>
 

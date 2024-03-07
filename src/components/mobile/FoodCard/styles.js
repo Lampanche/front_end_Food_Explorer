@@ -36,12 +36,6 @@ justify-content: center;
   align-items: center;
   gap: 1.2rem;
   
-  > span
-  {
-    font-family: 'Roboto', sem serifa;
-    color: ${( { theme } ) => theme.COLORS.CAKE_200};
-  }
-  
 }
 
   .btnDetailsFood
@@ -56,21 +50,6 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 1.6rem;
-  }
-
-  .wrappedMinusAndPlus
-  {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-
-    > span
-    {
-      text-align: center;
-      font-family: 'Roboto', sem serifa;
-      color: ${( { theme } ) => theme.COLORS.LIGHT_300};
-    }
-
   }
 
   .btnAddFood

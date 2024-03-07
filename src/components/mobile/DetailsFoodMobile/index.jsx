@@ -6,9 +6,11 @@ import iconInclude from "../../../assets/includeDetailsMobile.png";
 
 import imgFood from "../../../assets/image 2.png";
 
-import minus from "../../../assets/Minus.png";
+import { ControlFoodQuantity } from "../../common/ControlFoodQuantity/index.jsx";
 
-import plus from "../../../assets/Plus.png";
+import minusFoodCardDetails from "../../../assets/minusFoodCardDetails.png";
+
+import plusFoodCardDetails from "../../../assets/plusFoodCardDetails.png";
 
 
 import { BtnBack } from "../../common/BtnBack/index.jsx";
@@ -74,24 +76,8 @@ export function DetailsFoodMobile({isadmin})
 
           <div className="wrappedBtnsInclude">
 
-            <div className="wrappedBtnMinusAndPlus">
 
-              <button>
-
-                <img src={minus} alt="Imagem do botão de decrementar."></img>
-
-              </button>
-
-              <span>01</span>
-
-              <button>
-
-                <img src={plus} alt="Imagem do botão de incrementar."></img>
-
-              </button>
-
-            </div>
-
+            <ControlFoodQuantity imgMinus={minusFoodCardDetails} imgPlus={plusFoodCardDetails} fontSize={"2.263rem"} fontWeight={"700"} />
           
             <button>
 

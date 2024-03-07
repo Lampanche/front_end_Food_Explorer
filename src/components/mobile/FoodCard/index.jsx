@@ -1,12 +1,22 @@
 import { Container } from "./styles.js";
 
+import { BtnFavorite } from "../../common/BtnFavorite/index.jsx";
+
 import { ImgFood } from "../../common/ImgFood/index.jsx";
 
+import { PriceFoodCard } from "../../common/PriceFoodCard/index.jsx";
+
+import { ControlFoodQuantity } from "../../common/ControlFoodQuantity/index.jsx";
+
 import favoriteBtn from "../../../assets/favorite.png";
+
 import imgFood from "../../../assets/Dish.png";
+
 import imgBtnEditAdmin from "../../../assets/Pencil.png";
-import plus from "../../../assets/Plus.png";
-import minus from "../../../assets/Minus.png";
+
+import plusFoodCard from "../../../assets/plusFoodCard.png";
+
+import minusFoodCard from "../../../assets/minusFoodCard.png";
 
 
 export function FoodCard({ isadmin })
@@ -18,11 +28,7 @@ export function FoodCard({ isadmin })
         {
           isadmin?
 
-          <button className="btnHigher">
-
-            <img src={imgBtnEditAdmin} alt="Imagem de um coração, referente ao botão para favoritar."/>
-
-          </button>
+          <BtnFavorite leftPosition={"17rem"}/>
 
           :
 
@@ -44,7 +50,7 @@ export function FoodCard({ isadmin })
 
         </button>
 
-        <span>R$ 40,00</span>
+        <PriceFoodCard fontSize={"1.6rem"} title={"R$ 50,67"}/>
 
         {
             isadmin?
@@ -55,23 +61,7 @@ export function FoodCard({ isadmin })
 
             <div className="wrappedBtnsUser">
 
-              <div className="wrappedMinusAndPlus">
-
-              <button>
-
-                <img src={minus} alt="Botão de diminuir a quantidade selecionada."></img>
-
-              </button>
-
-              <span>01</span>
-
-              <button>
-
-                <img src={plus} alt="Botão de aumentar a quantidade selecionada."></img>
-
-              </button>
-
-              </div>
+              <ControlFoodQuantity imgPlus={plusFoodCard} imgMinus={minusFoodCard} fontSize={"1.6rem"} fontWeight={"400"}/>
 
               <button className="btnAddFood">
                 incluir
