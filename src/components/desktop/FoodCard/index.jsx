@@ -2,6 +2,10 @@ import { Container } from "./styles.js";
 
 import { BtnFavorite } from "../../common/BtnFavorite";
 
+import { BtnFavorited } from "../../common/BtnFavorited/index.jsx";
+
+import { BtnEditFood } from "../../common/BtnEditFood/index.jsx";
+
 import { ImgFood } from "../../common/ImgFood";
 
 import { TitleFoods } from "../../common/TitleFoods";
@@ -12,21 +16,41 @@ import { PriceFoodCard } from "../../common/PriceFoodCard/index.jsx";
 
 import { ControlFoodQuantity } from "../../common/ControlFoodQuantity/index.jsx";
 
-import { Button } from "../../common/Button";
-
 import imgFoodCardDesk from "../../../assets/imgFoodCardDesk.png";
 
 import plusFoodCard from "../../../assets/plusFoodCard.png";
 
 import minusFoodCard from "../../../assets/minusFoodCard.png";
 
-export function FoodCard()
+import { useState } from "react";
+
+export function FoodCard({isadmin})
 {
+
+  const [ favorite, setFavorite] = useState(false);
+
   return(
 
     <Container>
 
-      <BtnFavorite leftPosition={"26.2rem"}/>
+      {
+
+        isadmin ?
+
+        <BtnEditFood leftPosition={"26.2rem"}/>
+
+        :
+
+        favorite ?
+
+        <BtnFavorited  unfavorite={setFavorite} leftPosition={"26.2rem"}/>
+
+        :
+
+        <BtnFavorite favorite={setFavorite} leftPosition={"26.2rem"}/>
+        
+      }
+
 
       <ImgFood widthContainer={"17.6rem"} heightContainer={"17.6rem"} img={imgFoodCardDesk}/>
 
@@ -36,13 +60,30 @@ export function FoodCard()
 
       <PriceFoodCard title={"R$ 25,97"} fontSize={"3.2rem"}/>
 
-      <div className="wrappedBtns">
 
-        <ControlFoodQuantity imgPlus={plusFoodCard} imgMinus={minusFoodCard} fontSize={"2rem"} fontWeight={"700"}/>
+      {
 
-        <Button title={"Incluir"} />
+        isadmin ?
 
-      </div>
+        ""
+
+        :
+
+        <div className="wrappedBtns">
+
+          <ControlFoodQuantity imgPlus={plusFoodCard} imgMinus={minusFoodCard} fontSize={"2rem"} fontWeight={"700"}/>
+
+          <button className="btnInclude">
+
+            Incluir
+
+          </button>
+
+        </div>
+
+
+      }
+
 
     </Container>
 

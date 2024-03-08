@@ -10,6 +10,8 @@ import { BannerDesktop } from "../../components/desktop/BannerDesktop/index.jsx"
 
 import { WrappedSectionsMobile } from "../../components/mobile/WrappedSectionsMobile/index.jsx";
 
+import { WrappedSectionsDesktop } from "../../components/desktop/WrappedSectionsDesktop/index.jsx";
+
 import { FooterMobile } from "../../components/mobile/FooterMobile/index.jsx";
 
 import { FooterDesktop } from "../../components/desktop/FooterDesktop/index.jsx";
@@ -58,15 +60,11 @@ export function Home()
 
           <BannerDesktop/>
 
-          
-
-          <WrappedSectionsMobile isadmin={false}/>
+          <WrappedSectionsDesktop isadmin={false}/>
 
         </main>
 
       }
-
-      <FoodCard/>
 
       <FooterDesktop/>
 

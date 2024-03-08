@@ -31,9 +31,9 @@ export const Container = styled.section`
   }
 
   ::-webkit-scrollbar
-    {
-      display: none;
-    }
+  {
+    display: none;
+  }
 
 
 `

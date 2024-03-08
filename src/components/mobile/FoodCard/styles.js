@@ -14,21 +14,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-.btnHigher
-{
-
-  position: absolute;
-  top: 1.6rem;
-  left: 17rem;
-
-  img
-  {
-    width: 2.4rem;
-    height: ${( { isadmin } ) => isadmin ? `2.4rem` : `2.2rem`};
-  }
-
-}
-
 .wrappedMainContent
 {
   display: flex;
@@ -37,12 +22,6 @@ justify-content: center;
   gap: 1.2rem;
   
 }
-
-  .btnDetailsFood
-  {
-    font-family: 'Poppins', sem serifa;
-    color: ${( { theme } ) => theme.COLORS.LIGHT_300};
-  }
 
   .wrappedBtnsUser
   {
