@@ -1,6 +1,6 @@
 import { Container } from "./styles.js";
 
-import mainImgHomeMobile from "../../assets/mainImgHomeMobile.png";
+import mainImgHomeMobile from "../../../assets/mainImgHomeMobile.png";
 
 export function BannerMobile()
 {

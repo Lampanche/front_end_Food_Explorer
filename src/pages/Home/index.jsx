@@ -6,6 +6,8 @@ import { HamMenu } from "../../components/mobile/HamMenu/index.jsx";
 
 import { HeaderDesktop } from "../../components/desktop/HeaderDesktop/index.jsx";
 
+import { BannerMobile } from "../../components/mobile/BannerMobile";
+
 import { BannerDesktop } from "../../components/desktop/BannerDesktop/index.jsx";
 
 import { WrappedSectionsMobile } from "../../components/mobile/WrappedSectionsMobile/index.jsx";
@@ -23,9 +25,6 @@ import { resizeWidth } from "../../utils/resize.js";
 import { useState, useEffect } from "react";
 
 
-import { FoodCard } from "../../components/desktop/FoodCard/index.jsx";
-
-
 export function Home()
 { 
 
@@ -36,6 +35,9 @@ export function Home()
   resizeWidth(setVwStart);
 
   const Header = toogleComponents(vwStart, HeaderMobile, HeaderDesktop);
+  const WrappedSections = toogleComponents(vwStart, WrappedSectionsMobile, WrappedSectionsDesktop);
+  const Footer = toogleComponents(vwStart, FooterMobile, FooterDesktop);
+  const Banner = toogleComponents(vwStart, BannerMobile, BannerDesktop);
 
   useEffect(() => {}, [activeHamMenu]);
 
@@ -58,15 +60,15 @@ export function Home()
 
         <main>
 
-          <BannerDesktop/>
+          <Banner/>
 
-          <WrappedSectionsDesktop isadmin={false}/>
+          <WrappedSections isadmin={false}/>
 
         </main>
 
       }
 
-      <FooterDesktop/>
+      <Footer/>
 
     </Container>
 

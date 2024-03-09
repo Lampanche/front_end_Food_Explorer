@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.footer`
 
@@ -40,6 +41,12 @@ export const Container = styled.footer`
 
   }
 
-  
+  @media ${breakpoints.homeDesktopTransition}
+  {
+    > div
+    {
+      gap: 50rem;
+    }
+  }
 
 `

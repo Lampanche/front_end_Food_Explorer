@@ -1,10 +1,11 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.div`
 
-  min-width: 112.0rem;
-  min-height: 26.0rem;
+  width: 112.0rem;
+  height: 26.0rem;
   border-radius: 0.8rem;
   background-color: ${( { theme } ) => theme.COLORS.GRADIENT_200};
   position: relative;
@@ -34,6 +35,37 @@ export const Container = styled.div`
     {
       font-family: 'Roboto', sem serifa;
       color: ${( { theme } ) => theme.COLORS.LIGHT_300};
+    }
+
+  }
+
+  @media ${breakpoints.homeDesktopTransition}
+  {
+    width: 90rem;
+    height: 22rem;
+
+    img
+    {
+      right: 40.1rem;
+      top: -12rem;
+    }
+
+    .wrappedText
+    {
+
+      margin-left: 50rem;
+      margin-top: 8rem;
+
+      h1
+      {
+        font-size: 3rem;
+      }
+
+      p
+      {
+        font-size: 1.4rem;
+      }
+
     }
 
   }

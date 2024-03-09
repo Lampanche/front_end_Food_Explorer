@@ -1,6 +1,6 @@
-import { styled } from "styled-components"
+import { styled } from "styled-components";
 
-import { breakpoints } from "../../../styles/breakpoints"
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.div`
 
@@ -9,7 +9,8 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
-  padding: 2.4rem 2.4rem 0;
+  display: flex;
+  align-items: center;
 
     > div
     {
@@ -179,5 +180,6 @@ export const Container = styled.div`
       }
 
     }
+
 
 `

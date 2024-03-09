@@ -7,4 +7,5 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 4.8rem;
 
+  margin-top: 6.2rem;
 `
