@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Home } from "./pages/Home"
+import { Details } from "./pages/Details"
 
 import { ThemeProvider } from "styled-components"
 import theme from './styles/theme.js'
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <GlobalStyle/>
       
-      <Home/>
+      <Details/>
 
     </ThemeProvider>
     

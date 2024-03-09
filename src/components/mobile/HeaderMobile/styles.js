@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 import { breakpoints } from "../../../styles/breakpoints";
 
-export const Container = styled.div`
+export const Container = styled.header`
 
   width: 100%;
   height: 11.4rem;

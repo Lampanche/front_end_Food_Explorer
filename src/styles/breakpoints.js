@@ -7,5 +7,6 @@ export const breakpoints = {
   contentSignInTransitionDesktop: `(min-width:1024px) and (max-width:1120px)`,
   titleAppMobile: `(max-width:1023px)`,
   titleAppDesktopAndTransition: `(min-width:1024px)`,
-  homeDesktopTransition: `(max-width:1300px)`
+  homeDesktopTransition: `(max-width:1300px)`,
+  detailsDesktopTransition: `(max-width: 1200px)`
 }

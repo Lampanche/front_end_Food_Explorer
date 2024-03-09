@@ -7,6 +7,11 @@ export const Container = styled.div`
   align-items: center;
   gap:1.6rem;
 
+  button
+  {
+    display: flex;
+  }
+
   span
   {
     font-family: 'Roboto', sem serifa;
