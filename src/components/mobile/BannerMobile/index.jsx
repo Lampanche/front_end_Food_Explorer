@@ -2,22 +2,60 @@ import { Container } from "./styles.js";
 
 import mainImgHomeMobile from "../../../assets/mainImgHomeMobile.png";
 
+import mainImgHomeMobile_resized from "../../../assets/mainImgHomeMobile_resized.png";
+
+import {resizeWidth} from "../../../utils/resize.js";
+
+import { useState } from "react";
+
 export function BannerMobile()
 {
-  return(
 
-    <Container>
+  const vwStart = window.innerWidth 
 
-      <img src={mainImgHomeMobile} alt="Imagem de alimentos."></img>
+  const [ vwResized, setVwResized ] = useState(vwStart);
 
-      <div className="wrappedText">
+  resizeWidth(setVwResized)
 
-        <h1>Sabores inigualáveis</h1>
-        <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+  if(Number(vwResized) < 760)
+  {
+    return(
+  
+      <Container>
+  
+        <img src={mainImgHomeMobile} alt="Imagem de alimentos."></img>
+  
+        <div className="wrappedText">
+  
+          <h1>Sabores inigualáveis</h1>
+          <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+  
+        </div>
+  
+      </Container>
+  
+    )
 
-      </div>
+  }
+  else if(Number(vwResized) >= 760)
+  {
+    return(
+  
+      <Container>
+  
+        <img src={mainImgHomeMobile_resized} alt="Imagem de alimentos."></img>
+  
+        <div className="wrappedText">
+  
+          <h1>Sabores inigualáveis</h1>
+          <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+  
+        </div>
+  
+      </Container>
+  
+    )
+  }
 
-    </Container>
 
-  )
 }

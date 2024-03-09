@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 
 
-  @media ${breakpoints.homeMobileTransicaoTablet}
+  @media ${breakpoints.homeMobileTransitionTablet}
     {
       main
       {

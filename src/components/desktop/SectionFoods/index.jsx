@@ -17,7 +17,7 @@ export function SectionFoods({isadmin ,title})
   {
     e.preventDefault()
 
-    carrossel.current.scrollLeft-= 150
+    carrossel.current.scrollLeft-= 200
     
 
   }
@@ -26,7 +26,7 @@ export function SectionFoods({isadmin ,title})
   {
     e.preventDefault()
 
-    carrossel.current.scrollLeft += 150
+    carrossel.current.scrollLeft += 200
 
   }
 

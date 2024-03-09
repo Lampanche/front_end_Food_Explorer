@@ -15,10 +15,17 @@ export const Container = styled.div`
     gap:1.6rem;
     align-items: center;
     justify-content: center;
+
+    .btnActiveHamMenu
+    {
+      width: 2.4rem;
+      height: 1.8rem;
+    }
     
       a
       {
         width: 27.874rem;
+
         div
         {
           display: flex;

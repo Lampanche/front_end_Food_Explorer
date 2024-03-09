@@ -45,7 +45,7 @@ export function Home()
 
     <Container>
 
-      <Header isadmin = {false} setHamMenuActivePage = {setActiveHamMenu}/>
+      <Header isadmin = {true} setHamMenuActivePage = {setActiveHamMenu}/>
         
       {
         activeHamMenu ?

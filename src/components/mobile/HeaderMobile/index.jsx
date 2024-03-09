@@ -38,7 +38,7 @@ export function HeaderMobile({ title, isadmin, setHamMenuActivePage })
 
           <div className="wrappedHeader">
 
-            <button onClick={ () => {
+            <button className="btnActiveHamMenu" onClick={ () => {
               
               setHamMenuActive(true)
               setHamMenuActivePage(true)

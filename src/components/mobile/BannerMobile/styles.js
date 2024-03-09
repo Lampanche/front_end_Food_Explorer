@@ -5,7 +5,7 @@ import { breakpoints } from "../../../styles/breakpoints";
 export const Container = styled.div`
 
   background-color: ${( { theme } ) => theme.COLORS.GRADIENT_200};
-  max-width: 37.6rem;
+  width: 37.6rem;
   height: 12rem;
   margin: 4.4rem 1.6rem 0 3.6rem ;
   border-radius: 0.292rem;
@@ -16,8 +16,6 @@ export const Container = styled.div`
       position: absolute;
       top: -2.9rem;
       left: -3rem;
-      width: 19.1rem;
-      height: 14.9rem;
     }
     
     .wrappedText
@@ -41,42 +39,33 @@ export const Container = styled.div`
         color: ${( { theme } ) => theme.COLORS.LIGHT_300};
       }
 
-      @media ${breakpoints.homeMobileHeader}
-      {
-        h1
-        {
-          font-size: 1.4rem;
-        }
-      }
-
     }
 
 
-    @media ${breakpoints.homeMobileTransicaoTabletElements}
+    @media ${breakpoints.homeMobileTransitionTabletElements}
   {
-      max-width: 45rem;
-      height: 14rem;
+      width: 55rem;
+      height: 16rem;
 
       img
       {
-        width: 22rem;
-        height: 16rem;
-        top: -2rem;
+        top: -2.4rem;
+        left: -3.3rem;
       }
 
       .wrappedText
       {
 
-        margin-left: 18rem;
+        margin: 4.5rem 0 0 28.5rem;
 
         h1
         {
-          font-size: 2.2rem;
+          font-size: 2rem;
         }
 
         p
         {
-          font-size: 1.6rem;
+          font-size: 1.2rem;
         }
 
       }

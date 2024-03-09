@@ -22,7 +22,7 @@ export const Container = styled.section`
     overflow-x: auto;
     max-width: 43.6rem;
 
-    @media ${breakpoints.homeMobileTransicaoTabletElements}
+    @media ${breakpoints.homeMobileTransitionTabletElements}
     {
       max-width: 60rem;
     }

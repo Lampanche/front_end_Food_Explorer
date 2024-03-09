@@ -11,11 +11,13 @@ import { useState } from "react";
 export function BannerDesktop()
 {
 
-  const [vwStart, setVwStart] = useState("");
+  const vwStart = window.innerWidth
 
-  resizeWidth(setVwStart);
+  const [vwResized, setVwResized] = useState(vwStart);
 
-  if(Number(vwStart) > 1300)
+  resizeWidth(setVwResized);
+
+  if(Number(vwResized) > 1300)
   {
 
   return(
@@ -37,7 +39,8 @@ export function BannerDesktop()
   )
 
   }
-  else if(Number(vwStart) <= 1300)
+
+  else if(Number(vwResized) <= 1300)
   {
     return(
 
