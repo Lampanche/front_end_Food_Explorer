@@ -21,7 +21,7 @@ export const Container = styled.div`
     flex-wrap: wrap;
     border-radius: 0.8rem;
     width: ${( { width } ) => width};
-
+    min-height: 4.8rem;
     padding: 0.4rem 0.8rem;
 
     background-color: ${( { theme } ) => theme.COLORS.DARK_800};

@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${ ({ gap }) => gap };
+  width: ${ ({ width }) => width };
 
   label
   {
@@ -22,6 +23,7 @@ export const Container = styled.div`
     border: none;
     color:${({ theme }) => theme.COLORS.LIGHT_100};
     border-radius: 0.8rem;
+    height: 4.8rem;
 
     ::placeholder
     {

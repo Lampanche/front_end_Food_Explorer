@@ -16,6 +16,7 @@ export const Container = styled.div`
 
   select
   {
+    height: 4.8rem;
     font-family: 'Roboto', sem serifa;
     color: ${( { theme } ) => theme.COLORS.LIGHT_400};
     font-size: 1.4rem;

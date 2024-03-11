@@ -24,6 +24,8 @@ export const Container = styled.div`
 
   main
   {
+    display: flex;
+    justify-content: center;
     grid-area: main;
   }
 

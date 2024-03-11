@@ -16,7 +16,7 @@ export function Select({ width })
         style={ 
           { backgroundImage: "url(arrowDownSelect.png)",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "top 1.6rem right 1.2rem"
+            backgroundPosition: "top 1.95rem right 1.95rem"
           }
           }>
 

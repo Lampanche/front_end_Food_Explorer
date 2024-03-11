@@ -17,13 +17,14 @@ export const Container = styled.div`
 
   .wrappedInputContent
   {
+    height: 4.8rem;
     display: flex;
     align-items: center;
     justify-content: ${( { align } ) => align};
     gap: 0.8rem;
     border-radius: 0.8rem;
     background-color: ${( { theme } ) => theme.COLORS.DARK_800};
-    padding: 1.2rem 3.2rem;
+    padding: 1.2rem 2.6rem;
 
     span
     {
