@@ -1,10 +1,14 @@
 import { Container } from "./styles.js";
+
 import logo from "../../../assets/polygon1.png";
+
 import iconshopping from "../../../assets/iconShopping.png";
+
 import iconSignOut from "../../../assets/SignOut.png";
 
 import { SearchInput } from "../SearchInput/index.jsx";
 
+import { Link } from "react-router-dom";
 
 export function HeaderDesktop({ isadmin })
 { 
@@ -37,11 +41,11 @@ export function HeaderDesktop({ isadmin })
 
         {isadmin ? 
         
-          <button className="btnAdmin">
+          <Link  to={"/new"} className="btnAdmin">
 
-            <span>Novo prato</span>
+            Novo prato
 
-          </button>
+          </Link>
         
           :
 

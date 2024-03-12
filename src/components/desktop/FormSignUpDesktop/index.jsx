@@ -47,7 +47,7 @@ export function FormSignUpDesktop()
 
         <Button title={"Criar conta"}/>
 
-        <ButtonText title={"Já tenho uma conta"}/>
+        <ButtonText view={"signUp"} title={"Já tenho uma conta"}/>
 
       </form>
      

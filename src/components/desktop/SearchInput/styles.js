@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const Container = styled.div`
 
@@ -38,13 +39,17 @@ export const Container = styled.div`
     background: none;
     border: none;
     color:${({ theme }) => theme.COLORS.LIGHT_100};
-    outline: none;
   }
 
   input::placeholder
   {
     color:${({ theme }) => theme.COLORS.LIGHT_500};
     font-family: 'Roboto', sem serifa;
+  }
+
+  @media ${breakpoints.headerDesktopAdmTransition}
+  {
+    width: 50rem;
   }
 
 

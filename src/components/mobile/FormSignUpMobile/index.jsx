@@ -42,7 +42,7 @@ export function FormSignUpMobile()
 
       <Button title={"Criar conta"}/>
 
-      <ButtonText title={"Já tenho uma conta"}/>
+      <ButtonText view={"signUp"} title={"Já tenho uma conta"}/>
 
     </Container>
 

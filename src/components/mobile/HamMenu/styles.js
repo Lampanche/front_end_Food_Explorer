@@ -54,7 +54,7 @@ export const Container = styled.div`
       padding: 1rem 1rem;
       border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
 
-      span
+      a
       {
         font-family: "Poppins", sem serifa;
         font-size: 2.4rem;

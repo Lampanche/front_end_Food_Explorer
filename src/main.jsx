@@ -1,10 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { Edit } from "./pages/Edit"
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+import { Routes } from "./Routes";
 
 import { ThemeProvider } from "styled-components"
-import theme from './styles/theme.js'
-import GlobalStyle from "./styles/global"
+
+import theme from './styles/theme.js';
+
+import GlobalStyle from "./styles/global";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <GlobalStyle/>
       
-      <Edit/>
+      <Routes/>
 
     </ThemeProvider>
     

@@ -32,7 +32,7 @@ export function FormSignInMobile()
 
           <Button title={"Entrar"}/>
 
-          <ButtonText title={"Criar uma conta"}/>
+          <ButtonText view={"signIn"} title={"Criar uma conta"}/>
 
     </Container>
 

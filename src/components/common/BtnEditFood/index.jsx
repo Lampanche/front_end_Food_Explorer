@@ -6,7 +6,7 @@ export function BtnEditFood({leftPosition})
 {
   return(
 
-    <Container leftPosition={leftPosition}>
+    <Container to={"/edit"} leftPosition={leftPosition}>
 
       <img src={btnEditFood} alt="Icone do botão de favoritar a comida." />
 

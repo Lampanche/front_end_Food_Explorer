@@ -8,8 +8,10 @@ import { ButtonText } from "../../common/ButtonText";
 
 import { FormTitle } from "../../desktop/FormTitle";
 
+
 export function FormSignInDesktop()
 {
+
   return(
 
     <Container>
@@ -38,7 +40,7 @@ export function FormSignInDesktop()
 
         <Button title={"Entrar"}/>
 
-        <ButtonText title={"Criar uma conta"}/>
+        <ButtonText view={"signIn"} title={"Criar uma conta"}/>
 
       </form>
 

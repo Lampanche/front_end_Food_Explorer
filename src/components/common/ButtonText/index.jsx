@@ -1,15 +1,33 @@
 import { Container } from "./styles.js";
 
 
-export function ButtonText({title})
-{
-  return(
+export function ButtonText({ view, title})
+{ 
 
-    <Container>
+  if(view === "signIn")
+  {
+    return(
+  
+      <Container to={"/signup"}>
+  
+        {title}
+  
+      </Container>
+  
+    )
+  }
 
-      {title}
+  else if(view === "signUp")
+  {
+    return(
+  
+      <Container to={"/"}>
+  
+        {title}
+  
+      </Container>
+  
+    )
+  }
 
-    </Container>
-
-  )
 }

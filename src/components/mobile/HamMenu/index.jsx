@@ -2,6 +2,8 @@ import { Container } from "./styles.js";
 
 import iconSearch from "../../../assets/search.png";
 
+import { Link } from "react-router-dom";
+
 export function HamMenu({ isadmin })
 {
   return(
@@ -24,17 +26,17 @@ export function HamMenu({ isadmin })
 
           <div className="wrappedBtnOptions">
 
-            <button>
-              <span>Novo prato</span>
-            </button>
+            <Link to={"/new"}>
+              Novo prato
+            </Link>
 
           </div>
 
           <div className="wrappedBtnOptions">
 
-            <button>
-              <span>Sair</span>
-            </button>
+            <Link>
+              Sair
+            </Link>
 
           </div>
 
