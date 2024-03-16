@@ -8,9 +8,23 @@ import { ButtonText } from "../../common/ButtonText";
 
 import { FormTitle } from "../../desktop/FormTitle";
 
+import { useAuth } from "../../../hooks/auth.jsx";
+
+import { useState } from "react";
 
 export function FormSignInDesktop()
-{
+{ 
+
+  const [ email, setEmail ] = useState();
+  const [ password, setPassword ] = useState();
+
+  const { signIn } = useAuth()
+
+  const data = 
+  {
+    email : email,
+    password: password
+  }
 
   return(
 
@@ -21,6 +35,7 @@ export function FormSignInDesktop()
         <FormTitle title={"Faça login"}/>
 
         <InputText
+          setEmail={setEmail}
           title={"Email"}
           idInput={"email"}
           nameInput={"email"}
@@ -30,6 +45,7 @@ export function FormSignInDesktop()
         />
 
         <InputText
+          setPassword={setPassword}
           title={"Senha"}
           idInput={"password"}
           nameInput={"password"}
@@ -38,7 +54,7 @@ export function FormSignInDesktop()
           placeholder={"No mínimo 6 caracteres"}
         />
 
-        <Button title={"Entrar"}/>
+        <Button view={"signIn"}  data={data} title={"Entrar"}/>
 
         <ButtonText view={"signIn"} title={"Criar uma conta"}/>
 

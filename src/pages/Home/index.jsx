@@ -24,9 +24,13 @@ import { resizeWidth } from "../../utils/resize.js";
 
 import { useState, useEffect } from "react";
 
+import { useAuth } from "../../hooks/auth.jsx";
+
 
 export function Home()
 { 
+
+  const { user } = useAuth()
 
   const [ activeHamMenu, setActiveHamMenu ] = useState(false);
 
@@ -45,14 +49,14 @@ export function Home()
 
     <Container>
 
-      <Header isadmin = {true} setHamMenuActivePage = {setActiveHamMenu}/>
+      <Header isadmin = {user.admin} setHamMenuActivePage = {setActiveHamMenu}/>
         
       {
         activeHamMenu ?
 
         <main>
 
-          <HamMenu isadmin={true}/>
+          <HamMenu isadmin={user.admin}/>
 
         </main>
 
@@ -62,7 +66,7 @@ export function Home()
 
           <Banner/>
 
-          <WrappedSections isadmin={false}/>
+          <WrappedSections isadmin={user.admin}/>
 
         </main>
 

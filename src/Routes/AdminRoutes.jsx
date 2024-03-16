@@ -8,6 +8,8 @@ import { New } from "../pages/New";
 
 import { Edit } from "../pages/Edit";
 
+import { Restaurants } from "../pages/Restaurants";
+
 export function AdminRoutes()
 {
 
@@ -19,7 +21,8 @@ export function AdminRoutes()
       <Route path="/details" element={<Details/>} />
       <Route path="/new" element={<New/>}/>
       <Route path="/edit" element={<Edit/>} />
-
+      <Route path="/" element={<Restaurants/>} />
+      
     </Routes>
 
   )

@@ -1,15 +1,13 @@
-import { Routes, Route } from "react-router-dom";
-
 import { UsersRoutes } from "./UsersRoutes";
 
 import { AdminRoutes } from "./AdminRoutes";
 
+import { useAuth } from "../hooks/auth";
 
 export function AppRoutes()
 {
-  const admin = true;
+  const { user } = useAuth()
 
-  return admin ? <AdminRoutes/> : <UsersRoutes/> 
-  
-  
+  return user.admin ? <AdminRoutes/> : <UsersRoutes/>
+
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import { AuthProvider } from "./hooks/auth.jsx";
+
 import { Routes } from "./Routes";
 
 import { ThemeProvider } from "styled-components"
@@ -15,8 +17,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
 
       <GlobalStyle/>
-      
-      <Routes/>
+
+      <AuthProvider>
+
+        <Routes/>
+
+      </AuthProvider>
 
     </ThemeProvider>
     
