@@ -10,6 +10,8 @@ import { Edit } from "../pages/Edit";
 
 import { Restaurants } from "../pages/Restaurants";
 
+import { NewRestaurant } from "../pages/NewRestaurant";
+
 export function AdminRoutes()
 {
 
@@ -17,11 +19,12 @@ export function AdminRoutes()
 
     <Routes>
 
-      <Route path="/home" element={<Home/>}/>
+      <Route path="/home" element={<Home/>} />
       <Route path="/details" element={<Details/>} />
-      <Route path="/new" element={<New/>}/>
+      <Route path="/new" element={<New/>} />
       <Route path="/edit" element={<Edit/>} />
       <Route path="/" element={<Restaurants/>} />
+      <Route path="/newRestaurant" element={<NewRestaurant/>} />
       
     </Routes>
 

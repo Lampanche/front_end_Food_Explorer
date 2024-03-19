@@ -20,10 +20,14 @@ import { useAuth } from "../../hooks/auth.jsx";
 
 import { useState } from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import { TiPlus } from "react-icons/ti";
 
 export function Restaurants()
 {
+
+  const navigate = useNavigate();
 
   const { user }  = useAuth();
 
@@ -37,7 +41,6 @@ export function Restaurants()
 
   const Header = toogleComponents(vwResized, HeaderMobile, HeaderDesktop);
   const Footer = toogleComponents(vwResized, FooterMobile, FooterDesktop);
-
 
   return(
 
@@ -68,7 +71,7 @@ export function Restaurants()
 
                 user.admin ?
 
-                  <button className="wrappedBtnAdd">
+                  <button onClick={() => navigate("/newRestaurant")} className="wrappedBtnAdd">
 
                     <TiPlus/>
 

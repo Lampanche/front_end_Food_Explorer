@@ -46,7 +46,12 @@ export function FormNewFoodDesktop()
   
           <div className="wrappedInputs">
   
-            <InputFile title={"Selecione a imagem"} widthContainer={"23rem"}/>
+            <InputFile 
+              title={"Selecione a imagem"} 
+              widthContainer={"23rem"}
+              idInput={"imgFood"}
+              nameInput={"imgFood"}
+            />
             
             <InputText
               widthContainer={"46.3rem"} 

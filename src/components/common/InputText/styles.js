@@ -34,4 +34,9 @@ export const Container = styled.div`
 
   }
 
+  input:focus
+  {
+    outline: ${({ theme }) => theme.COLORS.LIGHT_100} solid 0.2rem;
+  }
+
 `

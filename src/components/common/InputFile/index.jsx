@@ -2,26 +2,26 @@ import { Container } from "./styles.js";
 
 import { useState} from "react";
 
-export function InputFile({widthContainer, alignItems, title})
+export function InputFile({widthContainer, alignItems, title, nameInput, idInput})
 {
 
-  const [ valueInputFile, setValueInputFile ] = useState(title)
+  const [ valueInputFile, setValueInputFile ] = useState("")
 
   return(
 
-    <Container>
+    <Container width = {widthContainer}>
 
-      <label htmlFor="imgfood">Imagem do prato</label>
+      <label htmlFor={nameInput}>{title}</label>
       
-      <div className="wrappedInputContent" width = {widthContainer} align = {alignItems}>
+      <div className="wrappedInputContent" align = {alignItems}>
 
         <button className="wrappedInput" style={{ backgroundImage: "url(UploadSimple.png)" }}>
 
-          <input  type="file" name="imgfood" id="imgfood" onChange={(e) => setValueInputFile(e.currentTarget.files.item(0).name)}></input>
+          <input  type="file" name={nameInput} id={idInput} onChange={(e) => setValueInputFile(e.currentTarget.files.item(0).name)}></input>
 
         </button>
 
-        <span>{valueInputFile}</span>
+        <span>{title}</span>
 
       </div>
 

@@ -33,7 +33,11 @@ export function FormNewFoodMobile()
 
       <TitleFormAddAndAttFood title={"Novo prato"}/>
 
-      <InputFile title={"Selecione uma imagem"}/>
+      <InputFile 
+        title={"Selecione uma imagem"}
+        idInput={"imgFood"}
+        nameInput={"imgFood"}
+      />
 
       <InputText
         title={"Nome"} 
