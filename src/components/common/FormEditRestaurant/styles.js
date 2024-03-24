@@ -62,33 +62,11 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 3.2rem;
 
-    > button
-    {
-      background-color: ${( { theme } ) => theme.COLORS.TOMATO_400};
-      padding:  1.2rem 2.4rem;
-      border-radius: 0.5rem;
-      width: 17.2rem;
-      height: 4.8rem;
-      color: ${( { theme } ) => theme.COLORS.LIGHT_100};
-      font-family: "Poppins", sem serifa;
-      font-size: 1.4rem;
-      align-self: flex-end;
-
-    }
-
     @media ${breakpoints.formsRestaurantsTransitionDesktop}
-      {
-
-        align-items: center;
-        width: 50rem;
-      
-        button
-        {
-          width: 50%;
-          align-self: auto;
-        }
-
-      }
+    {
+      align-items: center;
+      width: 50rem;
+    }
 
     @media ${breakpoints.formsRestaurantsTransitionMobile}
     {
@@ -115,6 +93,49 @@ export const Container = styled.div`
 
     }
 
+  }
+
+  .wrappedBtns
+  {
+
+    display: flex;
+    gap: 2.4rem;
+    align-self: flex-end;
+
+    @media ${breakpoints.formsRestaurantsTransitionDesktop}
+    {
+      
+      width: 100%;
+      align-self: auto;
+      gap: none;
+      justify-content: space-between;
+
+    }    
+
+  }
+
+  .wrappedBtns button:nth-child(even)
+  {
+    background-color: ${( { theme } ) => theme.COLORS.TOMATO_400};
+    padding:  1.2rem 2.4rem;
+    border-radius: 0.5rem;
+    width: 17.2rem;
+    height: 4.8rem;
+    color: ${( { theme } ) => theme.COLORS.LIGHT_100};
+    font-family: "Poppins", sem serifa;
+    font-size: 1.4rem;
+  }
+
+  .wrappedBtns button:nth-child(odd)
+  {
+    width: 13.5rem;
+    height: 4.8rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.5rem;
+    background-color: ${( { theme } ) => theme.COLORS.DARK_800};
+    color: ${( { theme } ) => theme.COLORS.LIGHT_100};
+    font-family: "Poppins", sem serifa;
+    font-size: 1.4rem;
   }
 
   @media ${breakpoints.formsRestaurantsTransitionDesktop}

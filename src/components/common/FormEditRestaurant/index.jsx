@@ -1,6 +1,6 @@
 import { Container } from "./styles.js";
 
-import { TiPlus } from "react-icons/ti";
+import { TiEdit } from "react-icons/ti";
 
 import { BtnBack } from "../BtnBack";
 
@@ -14,7 +14,7 @@ import { useState } from "react";
 
 import caretLeftFormDesktopRestaurant from "../../../assets/CaretLeftFormDesktop.png";
 
-export function FormNewRestaurant()
+export function FormEditRestaurant()
 {
 
   const vwStart = window.innerWidth;
@@ -41,8 +41,8 @@ export function FormNewRestaurant()
 
         <div className="wrappedTitle">
 
-          <TiPlus/>
-          <h1>Novo restaurante</h1>
+          <TiEdit/>
+          <h1>Editar restaurante</h1>
 
         </div>
 
@@ -94,11 +94,21 @@ export function FormNewRestaurant()
 
         </div>
 
-        <button>
+        <div className="wrappedBtns">
 
-          Salvar
+          <button>
 
-        </button>
+            Excluir
+
+          </button>
+
+          <button>
+
+            Salvar alterações
+
+          </button>
+
+        </div>
 
       </form>
 

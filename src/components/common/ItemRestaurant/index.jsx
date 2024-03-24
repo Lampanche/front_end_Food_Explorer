@@ -2,14 +2,15 @@ import { Container } from "./styles.js";
 
 import { WrappedInfoRestaurant } from "./styles.js";
 
-import { Button } from "../../common/Button";
-
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import iconRestaurant from "../../../assets/IconRestaurant.png";
 
 export function ItemRestaurant({isadmin, title})
 {
+
+  const navigate = useNavigate();
+
   return(
 
     <Container>
@@ -26,7 +27,7 @@ export function ItemRestaurant({isadmin, title})
 
         isadmin ?
 
-        <button>
+        <button onClick={() => navigate("/editRestaurant") }>
           Editar
         </button>
 

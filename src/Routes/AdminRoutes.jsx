@@ -12,6 +12,8 @@ import { Restaurants } from "../pages/Restaurants";
 
 import { NewRestaurant } from "../pages/NewRestaurant";
 
+import { EditRestaurant } from "../pages/EditRestaurant";
+
 export function AdminRoutes()
 {
 
@@ -25,6 +27,7 @@ export function AdminRoutes()
       <Route path="/edit" element={<Edit/>} />
       <Route path="/" element={<Restaurants/>} />
       <Route path="/newRestaurant" element={<NewRestaurant/>} />
+      <Route path="/editRestaurant" element={<EditRestaurant/>} />
       
     </Routes>
 
