@@ -8,10 +8,12 @@ import iconSignOut from "../../../assets/SignOut.png";
 
 import { SearchInput } from "../SearchInput/index.jsx";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function HeaderDesktop({ isadmin })
-{ 
+{
+  
+  const navigate = useNavigate();
 
   return(
 
@@ -53,7 +55,7 @@ export function HeaderDesktop({ isadmin })
 
             <a href="#">Meus favoritos</a>
 
-            <button className="btnUser">
+            <button onClick={() => navigate("/order")} className="btnUser">
 
               <img src={iconshopping} alt="Imagem do icone de itens escolhidos" />
 

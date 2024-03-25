@@ -16,5 +16,6 @@ export const breakpoints = {
   restaurantsTransitionTablet: `(min-width:700px) and (max-width:1023px) `,
   restaurantsTransitionMobile: `(min-width:340px) and (max-width:699px) `,
   formsRestaurantsTransitionDesktop: `(max-width:1100px)`,
-  formsRestaurantsTransitionMobile: `(max-width:580px)`
+  formsRestaurantsTransitionMobile: `(max-width:580px)`,
+  myOrderTransitionDesktop: `(max-width:1200px)`
 }
