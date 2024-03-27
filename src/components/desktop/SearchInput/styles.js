@@ -8,9 +8,11 @@ export const Container = styled.div`
   align-items: center;
   gap: 1.4rem;
 
+  height: 4.8rem;
+
   justify-content: ${({ isadmin }) => isadmin ? `center` : ` `}; 
 
-  width: ${({ isadmin }) => isadmin ? `58.1rem` : `40.9rem`};
+  width: ${({ isadmin }) => isadmin ? `58.1rem` : `30rem`};
 
   border-radius: 0.5rem;
 
@@ -38,7 +40,13 @@ export const Container = styled.div`
     height: 100%; 
     background: none;
     border: none;
-    color:${({ theme }) => theme.COLORS.LIGHT_100};
+    color:${({ theme }) => theme.COLORS.LIGHT_500};
+    font-family: 'Roboto', sem serifa;
+  }
+  
+  input:focus
+  {
+    outline: none;
   }
 
   input::placeholder
@@ -47,9 +55,9 @@ export const Container = styled.div`
     font-family: 'Roboto', sem serifa;
   }
 
-  @media ${breakpoints.headerDesktopAdmTransition}
+  @media ${breakpoints.headerDesktopTransition}
   {
-    width: 50rem;
+    width: ${({ isadmin }) => isadmin ? `50rem` : `26rem`};
   }
 
 

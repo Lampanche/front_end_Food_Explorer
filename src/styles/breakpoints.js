@@ -1,6 +1,5 @@
 export const breakpoints = {
-  headerBtn: `(min-width:1024px)`,
-  headerBtnReset: `(min-width:1100px)`,
+  headerBtnTransitionDesktop: `(max-width:1100px)`,
   homeMobileHeader: `(max-width:410px)`,
   homeMobileTransitionTablet: `(min-width:480px)`,
   homeMobileTransitionTabletElements: `(min-width:760px)`,
@@ -11,11 +10,12 @@ export const breakpoints = {
   detailsDesktopTransition: `(max-width: 1200px)`,
   newDesktopTransition: `(max-width:1300px)`,
   newMobileTransition: `(min-width:760px)`,
-  headerDesktopAdmTransition: `(max-width:1150px)`,
+  headerDesktopTransition: `(max-width:1150px)`,
   restaurantsTransitionDesktop: `(min-width:1024px) and (max-width:1200px) `,
   restaurantsTransitionTablet: `(min-width:700px) and (max-width:1023px) `,
   restaurantsTransitionMobile: `(min-width:340px) and (max-width:699px) `,
   formsRestaurantsTransitionDesktop: `(max-width:1100px)`,
   formsRestaurantsTransitionMobile: `(max-width:580px)`,
-  myOrderTransitionDesktop: `(max-width:1200px)`
+  myOrderTransitionDesktop: `(max-width:1200px)`,
+  qrCodeTransitionMobile: `(max-width:899px)`
 }

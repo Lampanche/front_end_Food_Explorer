@@ -17,12 +17,14 @@ export const Container = styled.header`
       width: 100%;
       display: flex;
       gap: 3.2rem;
+      align-items: center;
       justify-content: center;
 
       > a
       {
         display: flex;
         align-items: center;
+        justify-content: center;
       }
 
       .wrappedLogo
@@ -69,12 +71,19 @@ export const Container = styled.header`
             color: ${({ theme }) => theme.COLORS.LIGHT_300};
             font-family: 'Roboto', sem serifa;
             white-space: nowrap;
+
+            @media ${breakpoints.headerBtnTransitionDesktop}
+            {
+              font-size: 1.4rem;
+            }
+
           }
 
           .btnUser
           {
             background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
 
+            height: 5.6rem;
             border-radius: 0.5rem;
 
             display: flex;
@@ -87,6 +96,32 @@ export const Container = styled.header`
             font-family: 'Poppins', sem serifa;
             font-size: 1.4rem;
             font-weight: 400;
+
+            @media ${breakpoints.headerBtnTransitionDesktop}
+            {
+              
+                padding: 1rem 2rem;
+                height: 4.5rem;
+
+                img
+                {
+                  height: 1.8rem;
+                  width: 2rem;
+                }
+
+                span
+                {
+                  font-size: 1rem;
+
+                  > span
+                  {
+                    font-size: 1rem;
+                  }
+
+                }
+ 
+            }
+
           }
 
       }
@@ -94,90 +129,24 @@ export const Container = styled.header`
       .btnAdmin
       {
         background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
-
+        width: 21.6rem;
         border-radius: 0.5rem;
 
         padding: 1.2rem 3.2rem;
 
+        
         color:${({ theme }) => theme.COLORS.LIGHT_100};
         font-family: 'Poppins', sem serifa;
         font-size: clamp(0.8rem, 1vw, 1.4rem);
         font-weight: 400;
-      }    
 
-      @media ${breakpoints.headerBtn}
-      {
-        .btnAdmin
+        @media ${breakpoints.headerBtnTransitionDesktop}
         {
-          padding: 0.4rem 1.5rem;
-        }
-
-        .wrappedBtnAndLink
-        {
-            .btnUser
-            {
-
-              padding: 0.8rem 1.8rem;
-
-
-              img
-              {
-                height: 1.8rem;
-                width: 2rem;
-              }
-
-              span
-              {
-                font-size: 1rem;
-
-                > span
-                {
-                  font-size: 1rem;
-                }
-
-              }
-
-            }
+          width: 18rem;
         }
 
       }
-
-      @media ${breakpoints.headerBtnReset} 
-      {
-        .btnAdmin
-        {
-          padding: 1.2rem 3.2rem;
-        }
-
-        .wrappedBtnAndLink
-        {
-            .btnUser
-            {
-
-              padding: 1.6rem 3.2rem;
-
-
-              img
-              {
-                height: 2.2rem;
-                width: 2.7rem;
-              }
-
-              span
-              {
-                font-size: 1.4rem;
-
-                > span
-                {
-                  font-size: 1.4rem;
-                }
-
-              }
-
-            }
-        }
-        
-      }
+      
 
     }
 

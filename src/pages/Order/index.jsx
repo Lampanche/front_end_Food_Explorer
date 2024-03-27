@@ -68,31 +68,31 @@ export function Order()
 
                     payment ?
 
-                    <div className="contentTabletAndMobile">
+                      <div className="contentTabletAndMobile">
 
-                      <Payment/>
+                        <Payment/>
 
-                      <button onClick={() => setPayment(false)}>
+                        <button onClick={() => setPayment(false)}>
 
-                        Voltar
+                          Voltar
 
-                      </button>
+                        </button>
 
-                    </div>
+                      </div>
 
                     :
 
-                    <div className="contentTabletAndMobile">
+                      <div className="contentTabletAndMobile">
 
-                      <MyOrder/>
+                        <MyOrder/>
 
-                      <button onClick={() => setPayment(true)}>
+                        <button onClick={() => setPayment(true)}>
 
-                        Avançar
+                          Avançar
 
-                      </button>
+                        </button>
 
-                    </div>
+                      </div>
 
                   }
 

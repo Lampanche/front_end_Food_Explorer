@@ -55,6 +55,8 @@ export function HeaderDesktop({ isadmin })
 
             <a href="#">Meus favoritos</a>
 
+            <a href="#">Histórico de pedidos</a>
+
             <button onClick={() => navigate("/order")} className="btnUser">
 
               <img src={iconshopping} alt="Imagem do icone de itens escolhidos" />

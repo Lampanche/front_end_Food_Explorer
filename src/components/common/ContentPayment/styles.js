@@ -64,6 +64,12 @@ export const QrCode = styled.img`
 
   object-fit: cover;
 
+  @media ${breakpoints.qrCodeTransitionMobile}
+  {
+    width: 18rem;
+    height: 18rem;
+  }
+
 `
 
 export const Form = styled.form`
